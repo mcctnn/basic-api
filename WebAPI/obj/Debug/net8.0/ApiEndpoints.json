@@ -1,0 +1,435 @@
+[
+  {
+    "ContainingType": "Presentation.Controllers.RootController",
+    "Method": "GetRoot",
+    "RelativePath": "api",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Accept",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [],
+    "EndpointName": "GetRoot"
+  },
+  {
+    "ContainingType": "Presentation.Controllers.AuthenticationController",
+    "Method": "RegisterUser",
+    "RelativePath": "api/authentication",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userForRegistrationDto",
+        "Type": "Entities.DataTransferObjects.UserForRegistrationDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Presentation.Controllers.AuthenticationController",
+    "Method": "Authenticate",
+    "RelativePath": "api/authentication/login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "user",
+        "Type": "Entities.DataTransferObjects.UserForAuthenticationDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Presentation.Controllers.AuthenticationController",
+    "Method": "Refresh",
+    "RelativePath": "api/authentication/refresh",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "tokenDto",
+        "Type": "Entities.DataTransferObjects.TokenDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Presentation.Controllers.BooksController",
+    "Method": "GetAllBooksAsync",
+    "RelativePath": "api/books",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "MinPrice",
+        "Type": "System.UInt32",
+        "IsRequired": false
+      },
+      {
+        "Name": "MaxPrice",
+        "Type": "System.UInt32",
+        "IsRequired": false
+      },
+      {
+        "Name": "ValidPriceRange",
+        "Type": "System.Boolean",
+        "IsRequired": false
+      },
+      {
+        "Name": "SearchTerm",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "PageNumber",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "PageSize",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "OrderBy",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Fields",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [],
+    "EndpointName": "GetAllBooksAsync"
+  },
+  {
+    "ContainingType": "Presentation.Controllers.BooksController",
+    "Method": "GetAllBooksAsync",
+    "RelativePath": "api/books",
+    "HttpMethod": "HEAD",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "MinPrice",
+        "Type": "System.UInt32",
+        "IsRequired": false
+      },
+      {
+        "Name": "MaxPrice",
+        "Type": "System.UInt32",
+        "IsRequired": false
+      },
+      {
+        "Name": "ValidPriceRange",
+        "Type": "System.Boolean",
+        "IsRequired": false
+      },
+      {
+        "Name": "SearchTerm",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "PageNumber",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "PageSize",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "OrderBy",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Fields",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Presentation.Controllers.BooksController",
+    "Method": "CreateOneBookAsync",
+    "RelativePath": "api/books",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "bookDto",
+        "Type": "Entities.DataTransferObjects.BookDtoForInsertion",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [],
+    "EndpointName": "CreateOneBookAsync"
+  },
+  {
+    "ContainingType": "Presentation.Controllers.BooksController",
+    "Method": "GetBooksOptions",
+    "RelativePath": "api/books",
+    "HttpMethod": "OPTIONS",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Presentation.Controllers.BooksV2Controller",
+    "Method": "GetAllBooksAsync",
+    "RelativePath": "api/books",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Presentation.Controllers.BooksController",
+    "Method": "GetBookAsync",
+    "RelativePath": "api/books/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Presentation.Controllers.BooksController",
+    "Method": "UpdateOneBookAsync",
+    "RelativePath": "api/books/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "bookDto",
+        "Type": "Entities.DataTransferObjects.BookDtoForUpdate",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Presentation.Controllers.BooksController",
+    "Method": "DeleteOneBookAsync",
+    "RelativePath": "api/books/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Presentation.Controllers.BooksController",
+    "Method": "PartiallyUpdateOneBookAsync",
+    "RelativePath": "api/books/{id}",
+    "HttpMethod": "PATCH",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "bookPatch",
+        "Type": "Microsoft.AspNetCore.JsonPatch.Operations.Operation[]",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Presentation.Controllers.BooksController",
+    "Method": "GetAllBooksWithDetails",
+    "RelativePath": "api/books/details",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Presentation.Controllers.CategoryController",
+    "Method": "GetAllCategoriesAsync",
+    "RelativePath": "api/categories",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [],
+    "EndpointName": "GetAllCategoriesAsync"
+  },
+  {
+    "ContainingType": "Presentation.Controllers.CategoryController",
+    "Method": "CreateOneCategoryAsync",
+    "RelativePath": "api/categories",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "categoryDto",
+        "Type": "Entities.DataTransferObjects.CategoryDtoForInsertion",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [],
+    "EndpointName": "CreateOneCategoryAsync"
+  },
+  {
+    "ContainingType": "Presentation.Controllers.CategoryController",
+    "Method": "GetBooksOptions",
+    "RelativePath": "api/categories",
+    "HttpMethod": "OPTIONS",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Presentation.Controllers.CategoryController",
+    "Method": "GetAllCategoriesAsync",
+    "RelativePath": "api/categories/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Presentation.Controllers.CategoryController",
+    "Method": "UpdateOneCategoryAsync",
+    "RelativePath": "api/categories/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "categoryDto",
+        "Type": "Entities.DataTransferObjects.CategoryDtoForUpdate",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Presentation.Controllers.CategoryController",
+    "Method": "DeleteOneBookAsync",
+    "RelativePath": "api/categories/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Presentation.Controllers.CategoryController",
+    "Method": "PartiallyUpdateOneBookAsync",
+    "RelativePath": "api/categories/{id}",
+    "HttpMethod": "PATCH",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "categoryPatch",
+        "Type": "Microsoft.AspNetCore.JsonPatch.Operations.Operation[]",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Presentation.Controllers.FilesController",
+    "Method": "Download",
+    "RelativePath": "api/files/download",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "fileName",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Presentation.Controllers.FilesController",
+    "Method": "Upload",
+    "RelativePath": "api/files/upload",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "file",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  }
+]
